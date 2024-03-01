@@ -17,7 +17,7 @@ const runtimeConfig = useRuntimeConfig();
 const { baseURL, cdnURL } = runtimeConfig.app;
 useServerSeoMeta({
   twitterCard: "summary_large_image",
-  twitterImage:{
+  twitterImage: {
     url: new URL(`${baseURL}og-image.jpg`, cdnURL).href,
     alt: "garage | sistema b em nuxtjs",
   },
@@ -30,6 +30,7 @@ useServerSeoMeta({
     height: 630,
     width: 1200,
   },
+  robots: "index, follow",
 });
 </script>
 
