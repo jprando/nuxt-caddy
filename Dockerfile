@@ -23,4 +23,4 @@ EXPOSE 3000
 
 USER node
 
-CMD echo ${APP}; echo ${PUBLIC_URL}; node ${APP}/.output/server/index.mjs
+CMD echo ${APP}; echo ${NUXT_PUBLIC_INICIO_URL}; node ${APP}/.output/server/index.mjs
