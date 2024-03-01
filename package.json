@@ -1,0 +1,16 @@
+{
+  "name": "garage",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "pnpm web:localhost start",
+    "preview": "pnpm web:localhost preview",
+    "dev": "pnpm web:localhost dev",
+    "web:localhost": "clear; HOST=127.0.0.1 pnpm --stream -r --filter @garage/web*",
+    "build": "pnpm --stream -r build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@8.15.3+sha256.fc4a49bd609550a41e14d20efbce802a4b892aa4cac877322de2f0924f122991"
+}

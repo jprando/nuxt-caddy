@@ -1,0 +1,22 @@
+{
+  "name": "@garage/core",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "./lib/main.ts",
+  "types": "./dist/lib/main.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "dev":"pnpm build --watch",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

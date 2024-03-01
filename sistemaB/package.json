@@ -1,0 +1,24 @@
+{
+  "name": "@garage/web-sistemab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "PORT=3003 node .output/server/index.mjs",
+    "preview": "PORT=3003 nuxt preview",
+    "dev": "PORT=3003 nuxt dev",
+    "build": "nuxt build --logLevel silent",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@garage/core": "workspace:^",
+    "@garage/ui": "workspace:^",
+    "nuxt": "^3.10.1",
+    "primevue": "^3.48.1",
+    "vue": "^3.4.15",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "nuxt-primevue": "^0.3.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@garage/web-proxy",
+  "private": true,
+  "scripts": {
+    "start": "pnpm proxy",
+    "preview": "pnpm proxy",
+    "dev": "pnpm proxy",
+    "proxy": "echo http://$HOST:3000/; caddy run --config Caddyfile --adapter caddyfile"
+  }
+}

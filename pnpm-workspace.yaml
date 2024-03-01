@@ -1,0 +1,6 @@
+packages:
+  - packages/*
+  - menu
+  - sistemaA
+  - sistemaB
+  - proxy

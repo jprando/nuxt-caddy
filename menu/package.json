@@ -1,0 +1,24 @@
+{
+  "name": "@garage/web-menu",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "PORT=3001 node .output/server/index.mjs",
+    "preview": "PORT=3001 nuxt preview",
+    "dev": "PORT=3001 nuxt dev",
+    "build": "nuxt build --logLevel silent",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@garage/core": "workspace:^",
+    "@garage/ui": "workspace:^",
+    "nuxt": "^3.10.3",
+    "primevue": "^3.48.1",
+    "vue": "^3.4.15",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "nuxt-primevue": "^0.3.0"
+  }
+}

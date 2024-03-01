@@ -1,0 +1,17 @@
+{
+	admin off
+	auto_https off
+}
+
+:3000 {
+	encode zstd gzip
+
+	redir / {$PUBLIC_URL=http://127.0.0.1:3000}/menu/
+	redir /menu {$PUBLIC_URL=http://127.0.0.1:3000}/menu/
+	redir /a {$PUBLIC_URL=http://127.0.0.1:3000}/a/
+	redir /b {$PUBLIC_URL=http://127.0.0.1:3000}/b/
+
+	reverse_proxy /menu/* :3001
+	reverse_proxy /a/* :3002
+	reverse_proxy /b/* :3003
+}
