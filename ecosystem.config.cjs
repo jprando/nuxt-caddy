@@ -15,7 +15,6 @@ module.exports = {
       env: {
         NODE_ENV,
         NITRO_PRESET,
-        PUBLIC_URL,
         NUXT_APP_CDN_URL: `${PUBLIC_URL}/menu/`,
       },
       cwd: "./menu",
@@ -29,7 +28,6 @@ module.exports = {
       env: {
         NODE_ENV,
         NITRO_PRESET,
-        PUBLIC_URL,
         NUXT_APP_CDN_URL: `${PUBLIC_URL}/a/`,
       },
       cwd: "./sistemaA",
@@ -43,7 +41,6 @@ module.exports = {
       env: {
         NODE_ENV,
         NITRO_PRESET,
-        PUBLIC_URL,
         NUXT_APP_CDN_URL: `${PUBLIC_URL}/b/`,
       },
       cwd: "./sistemaB",
@@ -55,9 +52,6 @@ module.exports = {
       instances: 1,
       script: "caddy",
       args: "run --config Caddyfile",
-      env: {
-        PUBLIC_URL,
-      },
       cwd: "./proxy",
     },
   ],
