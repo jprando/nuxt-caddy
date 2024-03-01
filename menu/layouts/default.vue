@@ -13,18 +13,22 @@
 </template>
 
 <script setup lang="ts">
+const { BASE_URL } = import.meta.env;
 const runtimeConfig = useRuntimeConfig();
-const { baseURL, cdnURL } = runtimeConfig.app;
+let { cdnURL } = runtimeConfig.app;
+cdnURL = cdnURL || `http://127.0.0.1:3001/${BASE_URL}`;
+const ogImageUrl = new URL(`/og-image.jpg`, cdnURL).href;
+
 useServerSeoMeta({
   twitterCard: "summary_large_image",
   twitterImage: {
-    url: new URL(`${baseURL}og-image.jpg`, cdnURL).href,
+    url: ogImageUrl,
     alt: "garage | sistema b em nuxtjs",
   },
   twitterSite: cdnURL,
   ogUrl: cdnURL,
   ogImage: {
-    url: new URL(`${baseURL}og-image.jpg`, cdnURL).href,
+    url: ogImageUrl,
     type: "image/jpeg",
     alt: "garage | sistema em nuxtjs",
     height: 630,

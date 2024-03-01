@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "PORT=3001 node .output/server/index.mjs",
-    "preview": "PORT=3001 nuxt preview",
-    "dev": "PORT=3001 nuxt dev",
+    "start": "node .output/server/index.mjs",
+    "preview": "PORT=3001 HOST=127.0.0.1 nuxt preview",
+    "dev": "nuxt dev",
     "build": "nuxt build --logLevel silent",
     "postinstall": "nuxt prepare"
   },
