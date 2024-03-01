@@ -13,7 +13,7 @@ FROM docker.io/library/node:20-alpine as garage-runtime
 
 ENV HOST="0.0.0.0" \
     APP="menu" \
-    PUBLIC_URL="http://127.0.0.1:3000/menu/"
+    NUXT_PUBLIC_INICIO_URL="http://127.0.0.1:3000/menu/"
 
 COPY --from=garage-build /app /app
 

@@ -29,7 +29,10 @@ export default defineNuxtConfig({
         { property: "og:url", content: process.env.NUXT_APP_CDN_URL },
         { property: "og:title", content: "SISTEMA" },
         { property: "og:description", content: "Sistema B em Nuxtjs" },
-        { property: "og:image", content: `${process.env.NUXT_APP_CDN_URL}/og-image.jpg` },
+        {
+          property: "og:image",
+          content: `${process.env.NUXT_APP_CDN_URL}/og-image.jpg`,
+        },
         { property: "twitter:url", content: process.env.NUXT_APP_CDN_URL },
         { property: "twitter:title", content: "SISTEMA" },
         { property: "twitter:description", content: "Sistema B em Nuxtjs" },
@@ -39,7 +42,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      inicioUrl: process.env.PUBLIC_URL || "http://127.0.0.1:3000",
+      inicioUrl: "http://127.0.0.1:3000",
     },
   },
 });
